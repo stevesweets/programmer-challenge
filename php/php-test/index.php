@@ -1,13 +1,19 @@
 <?php
 
 class Being {
-	private $genus = 'Homo Sapien';
+	public $genus = 'Homo Sapien';
 }
 
 class Person {
 	public $name = 'James';
 }
 
-$child = new Person;
+class Limbs {
+	private $limb_count = 4;
+}
 
-echo $child->name.' is a '.$child->genus;
+
+$person = new Person;
+// give $person the attributes required for the string below to output correctly.
+
+echo $person->name.' is a '.$person->genus.' with '.$person->limb_count.' limb(s).';
