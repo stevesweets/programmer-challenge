@@ -5,7 +5,7 @@ class Being {
 }
 
 class Person {
-	public $name = 'Steve';
+	public $name = 'James';
 }
 
 $child = new Person;
